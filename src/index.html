@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1 id="counterId"> This is a counter: 0</h1>
+<button id="addOneId"> Add one </button>
+<button id="minusOneId"> Minus one </button>
+<button id="resetId"> RESET </button>
+
+</body>
+
+<script>
+    let counter=0
+    const counterDisplay=document.getElementById("counterId")
+    const addOneBtn=document.getElementById("addOneId")
+    const minusOneBtn=document.getElementById("minusOneId")
+    const resetBtn=document.getElementById("resetId")
+
+    addOneBtn.addEventListener("click", function (){
+        counter++
+        counterDisplay.textContent = "Counter is: " + counter
+    })
+    minusOneBtn.addEventListener("click", function (){
+        counter--;
+        counterDisplay.textContent = "Counter is: " + counter
+    })
+    resetBtn.addEventListener("click", function (){
+        counter=0
+        counterDisplay.textContent="Counter is: " + counter;
+    })
+
+</script>
+</html>
