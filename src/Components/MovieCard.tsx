@@ -19,7 +19,7 @@ return <div className="movie-card">
 
     <div className="movie-info">
         <h3>{movie.title}</h3>
-        <p>Movie released at {movie.date}</p>
+        <p>Movie released in {movie.date}</p>
     </div>
 </div>
 }
